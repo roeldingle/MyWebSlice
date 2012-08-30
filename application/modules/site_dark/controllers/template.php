@@ -9,6 +9,7 @@ class Template extends MX_Controller
 	  $this->load->model('getClass');
 	  $this->app->use_css('site_dark/libs/bootstrap');
 	  $this->app->use_css('site_dark/libs/bootstrap-responsive');
+	  $this->app->use_css('site_dark/libs/animate');
 	  
 	  $this->app->use_js('site_dark/libs/bootstrap');	
    }

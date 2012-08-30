@@ -15,6 +15,16 @@ $(function(){
 		$('.carousel').carousel('prev');
 	});
 	
+	$('#resume_btn').mouseover(function(){
+		$(this).addClass('animated swing');
+	});
+	
+	$('#resume_btn').mouseout(function(){
+		$(this).removeClass('animated swing');
+	});
+	
+	
+	
 	
 
 });

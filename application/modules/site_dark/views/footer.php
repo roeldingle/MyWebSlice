@@ -30,8 +30,8 @@
 				
 
 				<div class="span3">
-					<iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/MyWebSlice"scrolling="no" frameborder="0"style="border:none; width:450px; height:60px"></iframe>
-					<p><a class="btn btn-primary btn-large" href="http://dl.dropbox.com/u/55912623/roel/docs/myresume.doc" >Download My Resume &raquo;</a></p>
+					<iframe src="https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/MyWebSlice"scrolling="no" frameborder="0"style="border:none; width:450px; height:80px"></iframe>
+					<p><a id="resume_btn" class="btn btn-primary btn-large" href="http://dl.dropbox.com/u/55912623/roel/docs/myresume.doc" >Download My Resume &raquo;</a></p>
 				</div>
 				
 			</div>
