@@ -7,6 +7,8 @@
 					<ul style="list-style:none;">
 					<?php echo Template::get_menu();?>
 					</ul>
+					<br />
+					<a href="javascript:$('html, body').animate({ scrollTop: 0 }, 'slow');" ><h5>Back to top</h5></a>
 					
 				</div>
 				

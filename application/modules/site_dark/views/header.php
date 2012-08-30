@@ -33,7 +33,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </a>
-			  <a class="brand" href="#"><div class="my_logo"></div></a>
+			  <a class="brand" href="/home"><div class="my_logo"></div></a>
 			  
 			  <div class="nav-collapse">
 				<ul class="nav">

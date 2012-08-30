@@ -16,8 +16,7 @@
 						
 							<div class="span6">
 								<?php echo $val['tm_desc'];?>
-								<br />
-								<p><img src="http://paulirish.com/lovesyou/new-browser-logos/all-browser_logos/browser_logos-64.png" /></p>
+								
 							</div>
 							
 							<div class="span6">
