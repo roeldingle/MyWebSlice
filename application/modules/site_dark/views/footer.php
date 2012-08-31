@@ -25,8 +25,14 @@
 				<div class="span3">
 					  <h4>
 					  <small>Mobile : 00910-3629-974<br />
-					  Email : roeldingle@gmail.com / roel_dingle@yahoo.com</small><hr />My Contact info</h4>
-					
+					  Email : roeldingle@gmail.com / roel_dingle@yahoo.com</small>
+					  
+					  <hr />Contact me @ &raquo;
+					  <a href="https://www.facebook.com/roel.dingle" target="_blank" ><img src="<?php echo $assets_path; ?>site_dark/img/fb.png" width="20px" height="25px" /></a>
+					  <a href="https://twitter.com/roel108" target="_blank" ><img src="<?php echo $assets_path; ?>site_dark/img/twitter.png" width="20px" height="25px" /></a>
+					  <a href="https://plus.google.com/u/0/101560676824560087183/posts" target="_blank" ><img src="<?php echo $assets_path; ?>site_dark/img/google_plus.png" width="20px" height="25px" /></a>
+					  </h4>
+						
 				</div>
 
 				
