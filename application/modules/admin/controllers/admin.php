@@ -13,11 +13,8 @@ class Admin extends MX_Controller
 	 $this->app->use_css('admin/libs/bootstrap');
 	 $this->app->use_css('admin/libs/bootstrap-responsive');
 	 
-	 $this->app->use_js('admin/libs/bootstrap');
-	 $this->app->use_js('admin/libs/underscore');
-	 $this->app->use_js('admin/libs/backbone');
-	 
-	 $this->app->use_js('admin/apps/custom');
+	 $this->app->use_js('admin/libs/require');
+	 $this->app->use_js('admin/apps/r_setup');
 	  
 	  $this->sModule = strtolower(__CLASS__);
       

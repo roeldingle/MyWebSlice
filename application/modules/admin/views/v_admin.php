@@ -1,4 +1,4 @@
-<h2>Dashboard</h2>
+<h2 id="page_title"></h2>
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span2">

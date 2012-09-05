@@ -1,16 +1,12 @@
 <?php
 
-class Common extends MX_Controller
+class Common
 {
    private $asort_field = array();
    private $adefault_field = '';
    private $sdefault_order = 'desc';
 
-   public function __construct()
-   {
-      parent::__construct();
-      $this->environment->assets_path;
-   }
+   public function __construct(){}
 
    public function pager($itotal_rows , $ilimit,$aclass = array())
    {
@@ -46,7 +42,7 @@ class Common extends MX_Controller
             $shtml .= "<li><a href='?page=$ilink{$sqry_string}' >$ilink</a>&nbsp;</li>";
          }
          if ($ilink >= ($ipage + $iinterval) && ($itotal_page - ($iinterval + 2)) >= $ipage){
-            $shtml .= "<li><a>&hellip;&nbsp;</a></li><li><a href='?page=$itotal_page'>$itotal_page</a></li>";
+            $shtml .= "<li><a>&hellip;&nbsp;</a></li><li><a href='?page=$itotal_page{$sqry_string}'>$itotal_page</a></li>";
             break;
          }
       }

@@ -1,3 +1,14 @@
+$(function(){
+    console.log("customererererere");
+	
+});
+
+
+
+
+
+
+/*
 var AppRouter = Backbone.Router.extend({
         routes: {
 			"": "_page",
@@ -20,23 +31,6 @@ Admin_view = Backbone.View.extend({
 			$('#'+actions).addClass('active');
 		}
     });
-	
-	
-$(function(){
-    var admin_router = new AppRouter;
-    Backbone.history.start();
-	
-});
-
-
-
-
-
-
-
-
-
-/*
 Backbone.View.extend({
 				model: new ModelStock(),
 				initialize: function(){

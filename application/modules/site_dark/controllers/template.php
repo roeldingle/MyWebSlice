@@ -6,7 +6,7 @@ class Template extends MX_Controller
    {
       parent::__construct();
       $this->load->module('core/app');
-	  $this->load->model('getClass');
+	  //$this->load->model('getClass');
 	  $this->app->use_css('site_dark/libs/bootstrap');
 	  $this->app->use_css('site_dark/libs/bootstrap-responsive');
 	  $this->app->use_css('site_dark/libs/animate');

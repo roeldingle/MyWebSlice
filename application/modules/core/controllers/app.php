@@ -148,43 +148,45 @@ class App extends MX_Controller
             }
 
             $spath_separator = (count($asegment)===0) ? '' : '/';
-            $sfile_path = $this->environment->assets_path . $smodule_name . "/{$stype}/" . $spath . $spath_separator . $apath_info['filename'];
+            $sfile_path = $this->environment->assets_path . $smodule_name . "/{$stype}" . $spath . $spath_separator . $apath_info['filename'];
             return $sfile_path;
          }
       }
    }
    
-   public function use_css($sfile, $bcache = false)
+   public function use_css($sfile, $bcache = false, $buse_dir = true,$aattribute = array())
    {   
+      $sdir = ($buse_dir === true) ? "css/" : "";
       if(filter_var($sfile,FILTER_VALIDATE_URL)){
          $aurl = parse_url($sfile);
          if($_SERVER['HTTP_HOST']===$aurl['host']){
-            $this->acss_source[] = array('sfile' => $sfile,"cache" => false);
+            $this->acss_source[] = array('sfile' => $sfile,"cache" => false,"attributes" => $aattribute);
          }else{
-            $this->acss_source[] = array('sfile' => $sfile,"cache" => $bcache);
+            $this->acss_source[] = array('sfile' => $sfile,"cache" => $bcache,"attributes" => $aattribute);
          }
       }else{
          $apath_info = pathinfo($sfile);
          if($apath_info['dirname']==='.'){
             return false;
          }else{
-            $this->acss_source[] = array("sfile" => $this->_get_file_path($sfile,'css') . '.css',"cache" => $bcache);
+            $this->acss_source[] = array("sfile" => $this->_get_file_path($sfile,$sdir) . '.css',"cache" => $bcache,"attributes" => $aattribute);
          }      
       }    
    }   
    
-   public function use_js($sfile, $bcache = false)
-   {   
+   public function use_js($sfile, $bcache = false, $buse_dir = true,$aattribute = array())
+   {  
+      $sdir = ($buse_dir === true) ? "js/" : "";
       if(filter_var($sfile,FILTER_VALIDATE_URL)){
          $aurl = parse_url($sfile);
          if($_SERVER['HTTP_HOST']===$aurl['host']){
-            $this->ajs_source[] = array('sfile' => $sfile,"cache" => false);
-         }else{
-            $this->ajs_source[] = array('sfile' => $sfile,"cache" => $bcache);
+            $this->ajs_source[self::$ijs_counter++] = array('sfile' => $sfile,"cache" => false);
+         }else{  
+            $this->ajs_source[self::$ijs_counter++] = array('sfile' => $sfile,"cache" => $bcache);
          }        
       }else{
          $apath_info = pathinfo($sfile);      
-         $this->ajs_source[self::$ijs_counter++] = array("sfile" => $this->_get_file_path($sfile,'js') . '.js',"cache" => $bcache);              
+         $this->ajs_source[self::$ijs_counter++] = array("sfile" => $this->_get_file_path($sfile,$sdir) . '.js',"cache" => $bcache,"attributes" => $aattribute);              
       }     
    }
 

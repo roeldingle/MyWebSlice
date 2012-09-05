@@ -1,2 +1,0 @@
-/* Generated on :2012-08-30 04:06:23*/
-var site = { row : function(element){ var rows = $(element); window.location = urls.current_url + "?row=" + rows.val() + element.query_string; },message : function(){ },close_dialog : function(element_obj,callback){ element_obj.dialog('close'); callback(); }}
